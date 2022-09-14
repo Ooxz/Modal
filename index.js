@@ -1,16 +1,18 @@
 const modal = document.getElementById("modal")
 const openModal = document.getElementById("open-modal")
 const closeModal = document.getElementById("close-modal")
+const overlay = document.getElementById("overlay")
+overlay.style.display = "none"
 
 closeModal.addEventListener("click", hideModal)
 openModal.addEventListener("click", contactDisplay)
 
 function hideModal() {
-	modal.style.display = "none"
+	overlay.style.display = "none"
 }
 
 function contactDisplay() {
-	modal.style.display = "block"
+	overlay.style.display = "block"
 }
 
 
